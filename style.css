@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow-color: hsl(47, 88%, 63%);
+  --White-color: hsl(0, 0%, 100%);
+  --Gray-color-500: hsl(0, 0%, 42%);
+  --Gray-color-900: hsl(0, 0%, 7%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--yellow-color);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "figtree", sans-serif;
+}
+.container {
+  background-color: var(--White-color);
+  width: clamp(30rem, 35vw, 40rem);
+  padding-block: 1.5rem 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 2rem;
+  border: 0.13rem solid var(--Gray-color-900);
+  box-shadow: 1rem 1rem 0rem var(--Gray-color-900);
+}
+.blog-image {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.learning {
+  background-color: var(--yellow-color);
+  display: inline-block;
+  font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+  font-weight: 700;
+  margin-block: 1.5rem 1rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.6rem;
+  border-radius: 0.5rem;
+  color: var(--Gray-color-900);
+}
+.publish-date {
+  font-size: clamp(1.4rem, 18vw, 1.8rem);
+  font-weight: 600;
+  color: var(--Gray-color-500);
+}
+.heading {
+  color: var(--Gray-color-900);
+  padding-block: 1.5rem;
+  font-size: clamp(2rem, 2.2vw, 2.5rem);
+}
+.description {
+  color: var(--Gray-color-500);
+  font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-block: 2rem 0.1rem;
+}
+.profile-picture {
+  width: 3.5rem;
+  margin-inline-end: 1rem;
+}
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
